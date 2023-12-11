@@ -9,11 +9,11 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #181820;
-  --secondary-text-color: #0064C3;
+  --secondary-text-color: #0064c3;
   --durability-text-color: #6a737d9c;
-  --icon-color: #0064C3;
-  --border-color: #8046EF;
-  --text-decoration-color: #8046EF;
+  --icon-color: #0064c3;
+  --border-color: #8046ef;
+  --text-decoration-color: #8046ef;
 }
 
 .container {
@@ -92,6 +92,9 @@ body {
 
 .contact-info__block--center {
   justify-content: center;
+  align-content: flex-start;
+  width: 20%;
+
 }
 
 .contact-info__item {
@@ -172,7 +175,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.skills__text span{
+.skills__text span {
   font-weight: bold;
 }
 .experiences {
@@ -238,21 +241,27 @@ body {
   margin-bottom: 20px;
 }
 
+.additional-info__education-university {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
 .additional-info__education-university-durability {
   color: var(--durability-text-color);
   text-align: left;
-  margin-bottom: 10px;
   font-size: 15px;
 }
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
   text-align: left;
-  margin-bottom: 10px;
 }
 
 .additional-info__education-university-name {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .additional-info__languages {
@@ -269,8 +278,34 @@ body {
   color: var(--primary-text-color);
 }
 
-.additional-info__hobbies-header{
+.additional-info__hobbies-header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+}
+
+.additional-info__hobbies-item-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.additional-info__hobbies-item:nth-child(1) {
+  fill: var(--primary-text-color);
+}
+
+.additional-info__hobbies-item:nth-child(2) {
+  fill: var(--text-decoration-color);
+}
+
+.additional-info__hobbies-item:nth-child(3) {
+  fill: var(--icon-color);
+}
+
+.additional-info__hobbies-item:last-child {
+  fill: #ecbe04;
+}
+.additional-info__hobbies-item svg {
+  width: 25px;
+  height: 25px;
 }
